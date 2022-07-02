@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Оформление заказа</title>
+</head>
+
+<body class="body">
+    <div class="container">
+        <section class="order">
+            <h1 class="order__title">Оформление заказа</h1>
+            <div class="order__container">
+                <div class="delivery">
+                    <div class="delivery__header">
+                        <h2 class="delivery__title">Доставка</h2>
+                        <div class="delivery__buttons">
+                            <button class="delivery__btn"><img src="./img/left-arrow.svg" alt="prev-btn"></button>
+                            <button class="delivery__btn"><img src="./img/right-arrow.svg" alt="next-btn"></button>
+                        </div>
+                    </div>
+                    <div class="delivery__places">
+                        <div class="delivery__place delivery__place_active">
+                            <div class="delivery__info">
+                                <h3 class="delivery__place_title">
+                                    Почта России, курьер — 24-26 сент.
+                                </h3>
+
+                                <p class="delivery__place_text">
+                                    ул. Академика Королева, 73/3, Петропавловск- Камчатский, 683000
+                                </p>
+
+                            </div>
+                            <div class="delivery__place_price">+367 ₽</div>
+                        </div>
+                        <div class="delivery__place">
+                            <div class="delivery__info">
+                                <h3 class="delivery__place_title">
+                                    Лабиринт, курьер — 25 сент.
+                                </h3>
+                                <p class="delivery__place_text">
+                                    Можайское шоссе, д. 21, кв. 50, Москва, 121471
+                                </p>
+                            </div>
+                            <div class="delivery__place_price">0 ₽</div>
+                        </div>
+                    </div>
+                    <button class="delivery__button">Выбрать новое место и способ</button>
+
+                    <div class="delivery__date">
+                        <div class="delivery__date_blocks">
+                            <div class="delivery__date_block delivery__date_block-active">
+                                <div class="delivery__date_info">
+                                    <h3 class="delivery__date_title">пн, 24 сен — ср, 26 сен</h3>
+                                    <p class="delivery__date_time">10:00–19:00</p>
+                                </div>
+
+                            </div>
+                            <div class="delivery__date_block">
+                                <h3 class="delivery__date_title">чт, 27 сен — пт, 28 сен</h3>
+                                <p class="delivery__date_time">10:00–19:00</p>
+                            </div>
+                        </div>
+                        <button class="delivery__date_button">Другие дата и время</button>
+                    </div>
+
+                    <div class="delivery__checkbox">
+                        <input class="delivery__checkbox_custom" type="checkbox" id="viber" name="viber" value="viber">
+                        <label for="viber">Viber/СМС уведомления о статусе заказа</label>
+                    </div>
+                    <div class="delivery__checkbox">
+                        <input class="delivery__checkbox_custom" type="checkbox" id="door" name="door" value="door">
+                        <label for="door">Оставить у двери (бесконтактная доставка)</label>
+                    </div>
+                    <div class="delivery__recipient">
+                        <h2 class="delivery__title">Получатель</h2>
+                    </div>
+                    <div class="recipient">
+                        <div class="recipient__info">
+                            <div class="recipient__wrapper">
+                                <div class="select__title">Имя и фамилия
+                                    <span class="select__title_mob">, как в паспорте</span>
+                                </div>
+                                <select name="name" class="select">
+                                    <option value="value" selected>
+                                        Вольфганг Вениаминович Константинопольский
+                                    </option>
+                                </select>
+                            </div>
+                            <button class="recipient__button">Новый получатель</button>
+                        </div>
+
+                        <div class="recipient__info">
+                            <div class="recipient__wrapper">
+                                <div class="select__title">
+                                    <span class="select__title_desc">Контактный </span>
+                                    <span class="select__title_mob">Мобильный </span> телефон
+                                </div>
+                                <select name="phone" class="select">
+                                    <option value="value" selected>
+                                        +7 910 234-56-78
+                                    </option>
+                                </select>
+                            </div>
+                            <button class="recipient__button">Новый телефон</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="cart">
+                    <div class="cart__details">
+                        <h2 class="cart__title">В заказе 4 товара
+                            <span class="cart__weight">(2 кг)</span>
+                        </h2>
+                        <div class="cart__price">
+                            <h4 class="cart__subtitle">Цена товаров</h4>
+                            <p class="cart__sum">29 456 ₽</p>
+                        </div>
+                        <div class="cart__discount">
+                            <h4 class="cart__subtitle">Все скидки</h4>
+                            <p class="cart__sum">-7 732 ₽</p>
+                        </div>
+                        <div class="cart__prepayment">
+                            <h4 class="cart__subtitle">Скидка за предоплату</h4>
+                            <p class="cart__sum">-3%</p>
+                        </div>
+                    </div>
+                    <hr class="hr">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <button class="footer__button">Оформить и оплатить</button>
+            <div class="footer__total">
+                <div class="footer__title">Итого к оплате на сайте:</div>
+                <div class="footer__sum">21 072 ₽</div>
+                <div class="footer__total_mob">К оплате: 21 072 ₽</div>
+                <button class="footer__button_detailed">Подробнее</button>
+            </div>
+        </footer>
+        <div class="popup__bg">
+            <form class="popup">
+                <div class="popup__cart">
+                    <div class="popup__details">
+                        <h2 class="popup__title">В заказе 5 товаров
+                            <span class="popup__weight">(2 кг)</span>
+                        </h2>
+                        <div class="popup__price">
+                            <h4 class="popup__subtitle">Цена товаров</h4>
+                            <p class="popup__sum">29 456 ₽</p>
+                        </div>
+                        <div class="popup__discount">
+                            <h4 class="popup__subtitle">Все скидки</h4>
+                            <p class="popup__sum">-7 732 ₽</p>
+                        </div>
+                        <hr class="hr">
+                        <div class="popup__prepayment">
+                            <h4 class="popup__subtitle">К оплате:</h4>
+                            <p class="popup__sum">21 072 ₽</p>
+                        </div>
+                        <hr class="hr">
+                    </div>
+                </div>
+                <button class="popup__close" type="button">Закрыть подробности</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
